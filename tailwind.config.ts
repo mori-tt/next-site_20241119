@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 export default {
   content: [
@@ -7,10 +8,15 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      xs: "475px",
+      ...defaultTheme.screens,
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        darkblue: "#00008b",
+        cadetblue: "#5f9ea0",
+        whitesmoke: "#f5f5f5",
       },
     },
   },
