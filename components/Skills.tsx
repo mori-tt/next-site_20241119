@@ -14,8 +14,8 @@ const Skills = () => {
           <p className="bg-cadetblue text-white text-sm font-medium py-3 px-5 rounded-full flex items-center gap-2">
             <span>
               <AiFillBulb className="w-4 h-4" />
-              LANGUAGES
             </span>
+            LANGUAGES
           </p>
         </div>
         {/* grid layout */}
