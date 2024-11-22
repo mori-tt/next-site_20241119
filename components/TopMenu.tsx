@@ -7,7 +7,7 @@ import { MdEmail } from "react-icons/md";
 import { useMenuStore } from "@/store/useMenuStore";
 
 const TopMenu = () => {
-  const { isOpen, openMobileMenu, closeMobileMenu } = useMenuStore();
+  const { isOpen, openMobileMenu } = useMenuStore();
   return (
     <section className="px-[40px] bg-whitesmoke py-4 z-10 max-xs:px5" id="home">
       <div className="max-w-7xl max-auto flex flex-col justify-between items-center gap-5">

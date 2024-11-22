@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface Project {
   name: string;
@@ -25,9 +26,11 @@ const ProjectCard = ({
       transition={{ duration: 0.3 }}
       className="mb-4 p-4 border border-gray-200 rounded-lg bg-whitesmoke shadow-md"
     >
-      <img
+      <Image
         src={image}
         alt={`${name} Image`}
+        width={500}
+        height={300}
         className="w-full h-auto mb-2 rounded-lg"
       />
       <h3 className="ml-2">{name}</h3>
