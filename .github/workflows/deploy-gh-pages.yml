@@ -29,9 +29,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NEXT_PUBLIC_SERVICE_ID: ${{ secrets.NEXT_PUBLIC_SERVICE_ID }}
+      NEXT_PUBLIC_BASE_PATH: /next-site_20241119
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
@@ -43,6 +44,7 @@ jobs:
         run: npm run build
         env:
           GITHUB_PAGES: true
+          NEXT_PUBLIC_BASE_PATH: /next-site_20241119
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
