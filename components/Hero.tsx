@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import "../app/animations.css";
+import { getImagePath } from "@/utils/path";
 const Hero = () => {
   return (
     <section className="w-full lg:h-screen h-fit bg-whitesmoke relative px-[40px] py-10 max-xs:px-[20px]">
@@ -36,7 +37,7 @@ const Hero = () => {
         </div>
         {/* right */}
         <Image
-          src={"/assets/heroimage.png"}
+          src={getImagePath("/assets/heroimage.png")}
           width={400}
           height={400}
           alt="heroImage"

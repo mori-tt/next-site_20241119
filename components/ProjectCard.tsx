@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
+import { getImagePath } from "@/utils/path";
 interface Project {
   name: string;
   githubUrl: string;
@@ -27,7 +27,7 @@ const ProjectCard = ({
       className="mb-4 p-4 border border-gray-200 rounded-lg bg-whitesmoke shadow-md"
     >
       <Image
-        src={image}
+        src={getImagePath(image)}
         alt={`${name} Image`}
         width={500}
         height={300}

@@ -5,7 +5,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { FaDev } from "react-icons/fa";
-
+import { getImagePath } from "@/utils/path";
 const SideMenu = () => {
   const { isOpen, closeMobileMenu } = useMenuStore();
   const [activeLink, setActiveLink] = useState(sideMenuLinks[0]);
@@ -52,7 +52,7 @@ const SideMenu = () => {
         {/* Up */}
         <div className="flex gap-2 justify-center items-center flex-col">
           <Image
-            src={"/assets/logo.png"}
+            src={getImagePath("/assets/logo.png")}
             width={100}
             height={100}
             alt="morimoli Image"

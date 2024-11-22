@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { AiFillBulb } from "react-icons/ai";
-
+import { getImagePath } from "@/utils/path";
 const Skills = () => {
   return (
     <section
@@ -22,7 +22,7 @@ const Skills = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5 max-xs:grid-cols-1 mt-10">
           <div className="flex flex-col items-center bg-whitesmoke p-8 rounded-md text-center shadow-sm justify-center">
             <Image
-              src={"/assets/skills/html.png"}
+              src={getImagePath("/assets/skills/html.png")}
               alt="html"
               width={100}
               height={100}
@@ -32,7 +32,7 @@ const Skills = () => {
           </div>
           <div className="flex flex-col items-center bg-whitesmoke p-8 rounded-md text-center shadow-sm justify-center">
             <Image
-              src={"/assets/skills/css.png"}
+              src={getImagePath("/assets/skills/css.png")}
               alt="css"
               width={100}
               height={100}
@@ -42,7 +42,7 @@ const Skills = () => {
           </div>
           <div className="flex flex-col items-center bg-whitesmoke p-8 rounded-md text-center shadow-sm justify-center">
             <Image
-              src={"/assets/skills/js.png"}
+              src={getImagePath("/assets/skills/js.png")}
               alt="javascript"
               width={100}
               height={100}
@@ -52,7 +52,7 @@ const Skills = () => {
           </div>
           <div className="flex flex-col items-center bg-whitesmoke p-8 rounded-md text-center shadow-sm justify-center">
             <Image
-              src={"/assets/skills/react.png"}
+              src={getImagePath("/assets/skills/react.png")}
               alt="react"
               width={100}
               height={100}
@@ -62,7 +62,7 @@ const Skills = () => {
           </div>
           <div className="flex flex-col items-center bg-whitesmoke p-8 rounded-md text-center shadow-sm justify-center">
             <Image
-              src={"/assets/skills/tailwindcss.png"}
+              src={getImagePath("/assets/skills/tailwindcss.png")}
               alt="tailwindcss"
               width={100}
               height={100}
@@ -72,7 +72,7 @@ const Skills = () => {
           </div>
           <div className="flex flex-col items-center bg-whitesmoke p-8 rounded-md text-center shadow-sm justify-center">
             <Image
-              src={"/assets/skills/mongo.png"}
+              src={getImagePath("/assets/skills/mongo.png")}
               alt="mongodb"
               width={100}
               height={100}
@@ -82,7 +82,7 @@ const Skills = () => {
           </div>
           <div className="flex flex-col items-center bg-whitesmoke p-8 rounded-md text-center shadow-sm justify-center">
             <Image
-              src={"/assets/skills/git.png"}
+              src={getImagePath("/assets/skills/git.png")}
               alt="git"
               width={100}
               height={100}
@@ -92,7 +92,7 @@ const Skills = () => {
           </div>
           <div className="flex flex-col items-center bg-whitesmoke p-8 rounded-md text-center shadow-sm justify-center">
             <Image
-              src={"/assets/skills/nextjs.png"}
+              src={getImagePath("/assets/skills/nextjs.png")}
               alt="next.js"
               width={100}
               height={100}
